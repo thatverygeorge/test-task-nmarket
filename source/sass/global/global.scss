@@ -1,0 +1,37 @@
+html {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  font-style: normal;
+  color: $gray-400;
+}
+
+body {
+  margin: 0;
+  padding: 40px 8px;
+  background-color: $gray-40;
+
+  @media (min-width: $tablet-width-768) {
+    padding: 40px 28px;
+  }
+
+  @media (min-width: $desktop-width-1280) {
+    padding: 40px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

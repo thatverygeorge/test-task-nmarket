@@ -1,0 +1,109 @@
+.appartment {
+  min-width: 304px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 20px 0 20px;
+  position: relative;
+  background-color: $white;
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+
+  @media (min-width: $tablet-width-768) {
+    padding: 24px 24px 0 24px;
+  }
+
+  @media (min-width: $tablet-width-920) {
+    display: grid;
+    grid-template-columns: 1fr 308px;
+    column-gap: 10px;
+  }
+
+  &__plan {
+    margin-left: 43px;
+    margin-bottom: 16px;
+    object-fit: contain;
+
+    @media (min-width: $tablet-width-768) {
+      margin-left: 0;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: $gray-750;
+    margin: 0;
+    margin-bottom: 16px;
+
+    @media (min-width: $tablet-width-768) {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__specs {
+    margin-bottom: 18px;
+  }
+
+  &__pins-list {
+    margin: 0;
+    margin-bottom: 8px;
+
+    @media (min-width: $tablet-width-768) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__reservation {
+    margin: 0;
+    margin-bottom: 12px;
+  }
+
+  &__developer {
+    margin: 0;
+    margin-bottom: 16px;
+
+    @media (min-width: $tablet-width-768) {
+      margin-bottom: 24px;
+    }
+
+    @media (min-width: $desktop-width-1280) {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__button-buy {
+    margin: 0;
+    margin-bottom: 10px;
+
+    @media (min-width: $tablet-width-768) {
+      margin-bottom: 14px;
+    }
+
+    @media (min-width: $tablet-width-920) {
+      margin-top: auto;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width-1280) {
+      margin-top: 0;
+    }
+  }
+
+  &__button-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+
+  &__pins-list {
+    margin: 0;
+    margin-bottom: 8px;
+
+    @media (min-width: $tablet-width-768) {
+      margin-bottom: 12px;
+    }
+  }
+}

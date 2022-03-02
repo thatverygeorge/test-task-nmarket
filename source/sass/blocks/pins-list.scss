@@ -1,0 +1,52 @@
+.pins-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  row-gap: 8px;
+  column-gap: 16px;
+
+  &__item {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    display: block;
+    padding: 8px 16px 8px 36px;
+    border-radius: 22px;
+    position: relative;
+
+    &--checked,
+    &--crossed {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 8px;
+        left: 12px;
+        background-image: url(../img/icon-key.svg);
+      }
+    }
+
+    &--checked {
+      background-color: $green-20;
+      color: $green-500;
+
+      &::before {
+        background-image: url(../img/icon-check.svg);
+      }
+    }
+
+    &--crossed {
+      background-color: $red-20;
+      color: $red-500;
+
+      &::before {
+        background-image: url(../img/icon-cross-green.svg);
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test Task НМАРКЕТ</title>
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="fonts/roboto-regular.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+  <link href="fonts/roboto-500.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+  <link href="fonts/roboto-700.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body>
+  <main class="appartment">
+    <section class="appartment__left-column left-column">
+      <img class="appartment__plan" src="img/appartment-plan.png" width="178" height="178" alt="Планировка квартиры">
+
+      <div class="left-column__wrapper">
+
+        <h3 class="appartment__title">2-к квартира</h3>
+
+        <table class="appartment__specs specs">
+          <tr>
+            <td>Этаж</td>
+            <td>3 из 19</td>
+          </tr>
+          <tr>
+            <td>Высота потолков</td>
+            <td>3,2 м</td>
+          </tr>
+          <tr>
+            <td>Общая площадь</td>
+            <td>32,24 м²</td>
+          </tr>
+          <tr>
+            <td>Отделка</td>
+            <td>Предчистовая</td>
+          </tr>
+          <tr>
+            <td>Жилая площадь</td>
+            <td>22,24 м²</td>
+          </tr>
+          <tr>
+            <td>Площадь кухни</td>
+            <td>14,24 м²</td>
+          </tr>
+        </table>
+
+        <ul class="appartment__pins-list pins-list">
+          <li class="pins-list__item pins-list__item--checked">
+            Вы были на просмотре
+          </li>
+          <li class="pins-list__item pins-list__item--crossed">
+            Дом аккредитован другим банком
+          </li>
+        </ul>
+      </div>
+
+      <button class="appartment__button-close button-close button" type="button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="#B2B0AB">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M6.79507 5.30799C6.38441 4.89733 5.71861 4.89733 5.30796 5.30799C4.8973 5.71864 4.8973 6.38445 5.30796 6.7951L10.5129 12L5.30801 17.2049C4.89735 17.6156 4.89735 18.2814 5.30801 18.692C5.71866 19.1027 6.38446 19.1027 6.79512 18.692L12 13.4871L17.2048 18.692C17.6155 19.1026 18.2813 19.1026 18.6919 18.692C19.1026 18.2813 19.1026 17.6155 18.6919 17.2049L13.4871 12L18.692 6.79511C19.1027 6.38446 19.1027 5.71866 18.692 5.308C18.2813 4.89735 17.6155 4.89735 17.2049 5.308L12 10.5129L6.79507 5.30799Z" />
+        </svg>
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
+    <section class="appartment__right-column right-column">
+      <div class="right-column__wrapper">
+        <p class="appartment__reservation reservation">Ваша цена по брони до <span class="reservation__date">19
+            сентября</span>
+          <br>
+          <span class="reservation__price">3 312 666 Р</span>
+        </p>
+
+        <p class="appartment__developer developer">Текущая цена у застройщика
+          <br>
+          дороже на <span class="developer__price">324 825 Р</span>
+        </p>
+
+        <button class="appartment__button-buy button-buy button-buy--large button" type="button">
+          <span>Выбрать для покупки</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+.button-close {
+  background-color: transparent;
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  padding: 2px;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $gray-40;
+
+    svg {
+      fill: $gray-750;
+    }
+  }
+
+  &:active {
+    background-color: $gray-100;
+
+    svg {
+      fill: $gray-750;
+    }
+  }
+}
